@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "646723576174",
+    "firebase_url": "https://pontofitcozinha.firebaseio.com",
+    "project_id": "pontofitcozinha",
+    "storage_bucket": "pontofitcozinha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646723576174:android:e3b776c0fdf14407a9217f",
+        "android_client_info": {
+          "package_name": "com.bargaingrub.merchantapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646723576174-43tnitfu8v21cj8onljb0d6hf82r8i3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSZQItzVlg8lHDQ8EXX0Bu92367v3wxbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646723576174-43tnitfu8v21cj8onljb0d6hf82r8i3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
