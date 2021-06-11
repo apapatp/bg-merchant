@@ -730,7 +730,7 @@ document.addEventListener('init', function(event) {
 			  'field_name2':'size[]' , "size_data" : $size_data },
 			  
 			  {'field_name':"", "label": "Discount", "type":"h3"},			  
-			  {'field_name':"discount", "label": "Fixed Amount", "type":"number", "value" : discount  },
+			  {'field_name':"discount", "label": "Fixed Amount", "type":"number", "value" : discount, "required":1},
 			  
 			  {'field_name':"", "label": "Cooking Reference", "type":"h3"},			  
 			  {'field_name':"cooking_ref_list", "label": "Cooking Reference", "type":"text", "readonly":1, 
