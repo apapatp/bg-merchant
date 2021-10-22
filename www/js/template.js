@@ -371,7 +371,9 @@ setFormFields = function(fields){
 			   html+='<input type="hidden" name="upload_option_name"  class="upload_option_name" value="'+ val.upload_option_name +'">';
 			   html+='<input type="hidden" name="upload_next_action" class="upload_next_action" value="'+ val.upload_next_action +'">';
 			   html+='<input type="hidden" name="upload_type" class="upload_type" value="'+ val.upload_type +'">';
-			   
+			   html+='<input type="hidden" name="type_s3" class="type_s3" value="'+ val.type_s3 +'">';
+
+
 			   if (!empty(val.value)){
 			   	   html+='<input type="hidden" name="'+ val.upload_option_name +'" value="'+ val.value +'" class="added_photo" >';			   	  
 			   }
@@ -413,7 +415,9 @@ setFormFields = function(fields){
 			   html+='<input type="hidden" name="upload_option_name2"  class="upload_option_name2" value="'+ val.upload_option_name +'">';
 			   html+='<input type="hidden" name="upload_next_action2" class="upload_next_action2" value="'+ val.upload_next_action +'">';
 			   html+='<input type="hidden" name="upload_type2" class="upload_type2" value="'+ val.upload_type +'">';
-			   
+			   html+='<input type="hidden" name="type_s3" class="type_s3" value="'+ val.type_s3 +'">';
+
+
 			   if (!empty(val.value)){
 			   	   html+='<input type="hidden" name="'+ val.upload_option_name +'" value="'+ val.value +'" class="added_photo2" >';			   	  
 			   }
@@ -3030,4 +3034,66 @@ var generateTranslationField = function($language, $fields){
 		
 	});	
 	return $new_fields;	
+};
+
+setPackageList = function(data){
+	current_page_id = getCurrentPage(); html ='';	var row='';	
+	var object = $("#"+ current_page_id + " ons-list" );
+	var list = object[0]; $x=0;
+	$.each( data  , function( data, val ) {
+		
+		$checked='';
+		if($x<=0){
+			$checked='checked';
+		}
+		
+		html+='<ons-list-item tappable modifier="nodivider" >';
+	      html+='<label class="left">';
+	        html+='<ons-radio name="package_id" input-id="package_id_'+ val.package_id +'" value="'+ val.package_id +'"  '+$checked+'></ons-radio>';
+	      html+='</label>';
+	      html+='<label for="package_id_'+ val.package_id +'" class="center">';
+	        html+= val.title;
+	        if(val.promo_price_raw>0){
+	        	html+= '<span  class="pad-left-10 line_tru">'+val.price+'</span>';
+	        	html+= '<span  class="pad-left-10" >'+val.promo_price+'</span>';
+	        } else {
+	        	html+= '<span class="pad-left-10">'+val.price+'</span>';
+	        }
+	      html+='</label>';
+	    html+='</ons-list-item>';
+		
+	    row = ons.createElement(html);
+	    list.appendChild(row);
+	    html=''; 
+	    $x++;
+	});
+};
+
+
+
+setSelectionList = function(data){
+	current_page_id = getCurrentPage(); html ='';	var row='';	
+	var object = $("#"+ current_page_id + " ons-list" );
+	var list = object[0]; $x=0;
+	$.each( data  , function( key, val ) {
+		
+		$checked='';
+		if($x<=0){
+			$checked='checked';
+		}
+		
+		html+='<ons-list-item tappable modifier="nodivider" >';
+	      html+='<label class="left">';
+	        html+='<ons-radio name="payment_code" input-id="payment_code_'+ key +'" value="'+ key +'"  '+$checked+'></ons-radio>';
+	      html+='</label>';
+	      html+='<label for="payment_code_'+ key +'" class="center">';
+	        html+= val;	        
+	      html+='</label>';
+	    html+='</ons-list-item>';
+		
+	    row = ons.createElement(html);
+	    list.appendChild(row);
+	    html=''; 
+	    $x++;
+	});
 };

@@ -2,39 +2,42 @@
     "name": "com.bastisapp.merchantapp",
     "displayName": "Karenderia Merchant Version 2",
     "dependencies": {
-        "cordova-plugin-whitelist": "1.3.4",
+        "cordova-plugin-androidx-adapter": "^1.1.3",
+        "cordova-plugin-ble-central": "1.3.1",
         "cordova-plugin-buildinfo": "4.0.0",
         "cordova-plugin-camera": "4.1.0",
         "cordova-plugin-device": "2.0.3",
         "cordova-plugin-file-transfer": "1.7.1",
+        "cordova-plugin-firebasex": "11.0.3-cli",
         "cordova-plugin-geolocation": "4.1.0",
         "cordova-plugin-inappbrowser": "4.1.0",
+        "cordova-plugin-insomnia": "4.3.0",
         "cordova-plugin-media": "5.0.3",
         "cordova-plugin-network-information": "2.0.2",
-        "cordova-plugin-splashscreen": "6.0.0",
-        "cordova.plugins.diagnostic": "6.0.2",
         "cordova-plugin-request-location-accuracy": "2.3.0",
-        "uk.co.workingedge.phonegap.plugin.launchnavigator": "5.0.4",
-        "cordova-plugin-insomnia": "4.3.0",
-        "cordova-plugin-ble-central": "1.3.1",
-        "cordova-plugin-androidx-adapter": "^1.1.3",
-        "cordova-plugin-firebasex": "11.0.3-cli"
+        "cordova-plugin-splashscreen": "6.0.0",
+        "cordova-plugin-whitelist": "1.3.4",
+        "uk.co.workingedge.phonegap.plugin.launchnavigator": "5.0.4"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
             "cordova-plugin-buildinfo": {},
-            "cordova-plugin-camera": {},
+            "cordova-plugin-camera": {
+                "ANDROID_SUPPORT_V4_VERSION": "27.+"
+            },
             "cordova-plugin-device": {},
             "cordova-plugin-file-transfer": {},
-            "cordova-plugin-geolocation": {},
+            "cordova-plugin-geolocation": {
+                "GPS_REQUIRED": "true"
+            },
             "cordova-plugin-inappbrowser": {},
             "cordova-plugin-media": {},
             "cordova-plugin-network-information": {},
             "cordova-plugin-splashscreen": {},
-            "cordova.plugins.diagnostic": {},
             "cordova-plugin-request-location-accuracy": {
-                "PLAY_SERVICES_VERSION": "17.0.0"
+                "PLAY_SERVICES_VERSION": "17.0.0",
+                "PLAY_SERVICES_LOCATION_VERSION": "16.+"
             },
             "uk.co.workingedge.phonegap.plugin.launchnavigator": {
                 "GOOGLE_API_KEY_FOR_ANDROID": "",
@@ -49,9 +52,28 @@
                 "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "false",
                 "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "false",
                 "SETUP_RECAPTCHA_VERIFICATION": "false",
-                "IOS_STRIP_DEBUG": "true"
+                "IOS_STRIP_DEBUG": "true",
+                "ANDROID_FIREBASE_PERFORMANCE_MONITORING": "false",
+                "ANDROID_PLAY_SERVICES_AUTH_VERSION": "18.1.0",
+                "ANDROID_FIREBASE_ANALYTICS_VERSION": "17.5.0",
+                "ANDROID_FIREBASE_MESSAGING_VERSION": "20.3.0",
+                "ANDROID_FIREBASE_CONFIG_VERSION": "19.2.0",
+                "ANDROID_FIREBASE_PERF_VERSION": "19.0.9",
+                "ANDROID_FIREBASE_AUTH_VERSION": "19.4.0",
+                "ANDROID_FIREBASE_FIRESTORE_VERSION": "21.7.0",
+                "ANDROID_FIREBASE_CRASHLYTICS_VERSION": "17.2.2",
+                "ANDROID_FIREBASE_CRASHLYTICS_NDK_VERSION": "17.2.2",
+                "ANDROID_GSON_VERSION": "2.8.6",
+                "ANDROID_FIREBASE_PERF_GRADLE_PLUGIN_VERSION": "1.3.1"
+            },
+            "cordova.plugins.diagnostic": {
+                "ANDROIDX_VERSION": "1.0.0",
+                "ANDROIDX_APPCOMPAT_VERSION": "1.3.1"
             }
-        }
+        },
+        "platforms": [
+            "android"
+        ]
     },
     "scripts": {
         "monaca:preview": "npm run dev",
@@ -59,6 +81,11 @@
     },
     "devDependencies": {
         "browser-sync": "^2.24.5",
-        "cordova": "^10.0.0"
+        "cordova": "^10.0.0",
+        "cordova-android": "^9.1.0",
+        "cordova-plugin-actionsheet": "^2.3.3",
+        "cordova-plugin-dialogs": "^2.0.2",
+        "cordova-plugin-file": "^6.0.2",
+        "cordova.plugins.diagnostic": "^6.0.4"
     }
 }

@@ -160,6 +160,22 @@
        </ons-button>
 	   </div>
 	   
+	   <div class="both_forgot_and_signup_div">
+	   <ons-row>
+	      <ons-col vertical-align="center" width="50%" class="to_left" >
+	        <ons-button modifier="quiet material material--flat" onclick="loadSignupForm();" >
+		      <span class="trn">Create an account</span>
+		    </ons-button>
+	      </ons-col>
+	      
+	      <ons-col vertical-align="center" width="50%" class="to_right" >
+	        <ons-button modifier="quiet material material--flat" onclick="resetToPage('forgot_password.html','fade')">
+		      <span class="trn">Forgot password?</span>
+		    </ons-button>
+	      </ons-col>	      
+	   </ons-row>
+	   </div>
+	   
 	</ons-bottom-toolbar>
 	</form>
      
@@ -1973,7 +1989,8 @@
 	<input type="hidden" name="upload_option_name" class="upload_option_name" value="merchant_gallery">
 	<input type="hidden" name="upload_next_action" class="upload_next_action" value="list_reload">
 	<input type="hidden" name="upload_type" class="upload_type" value="2">
-	
+	<input type="hidden" name="type_s3" class="type_s3" value="">
+
 	<form id="frm_gallery" class="frm_gallery" method="POST" onsubmit="return false;"> 
 	<div class="field_label field_with_icon">
 	   <ons-input type="text" name="s" id="s" modifier="material underbar"	   
@@ -2036,7 +2053,8 @@
 	<input type="hidden" name="upload_option_name" class="upload_option_name" value="merchant_banner">
 	<input type="hidden" name="upload_next_action" class="upload_next_action" value="list_reload">
 	<input type="hidden" name="upload_type" class="upload_type" value="2">
-	
+	<input type="hidden" name="type_s3" class="type_s3" value="">
+
 	<form id="frm_banner" class="frm_banner" method="POST" onsubmit="return false;" > 
 	<div class="field_label field_with_icon">
 	   <ons-input type="text" name="s" id="s" modifier="material underbar"	   
@@ -2590,6 +2608,8 @@
   <input type="hidden" name="list" class="list" value=""> 
   <input type="hidden" name="field" class="field" value=""> 
   <input type="hidden" name="list_type" class="list_type" value="multiple"> 
+  <input type="hidden" name="field2" class="field2" value=""> 
+  <input type="hidden" name="field_reference" class="field_reference" value=""> 
   
   <form id="frm_selection" class="frm_selection" method="POST" onsubmit="return false;" > 		  	   	         
     <ons-list modifier="klist material">       
@@ -3612,6 +3632,238 @@ placeholder="Enter your PIN" maxlength="4" required float></ons-input>
 </ons-page>
 </template>    
 
+
+<template id="shipping_list_location.html">
+  <ons-page id="shipping_list_location" modifier="kform_page kpage_pullhook" >  
+      
+  <ons-toolbar>
+   <div class="left"><ons-back-button></ons-back-button></div>      
+  </ons-toolbar>
+  
+  <ons-pull-hook id="pull_hook"></ons-pull-hook>
+  
+    <div class="top_sections" >	
+         <div class="to_center">
+            <h3 class="trn">Delivery</h3>
+	       <div class="sub_title rounded_tag trn">Delivery Charges Rates</div>
+	     </div>
+	     
+	     <!--<div class="to_center" style="margin-top:5px;">
+	       <ons-switch name="shipping_enabled" id="shipping_enabled" modifier="material" class="shipping_enabled"
+	       value="2" onclick="enabled_switch('shipping_enabled','enabled_shipping');" >
+	       </ons-switch>   
+	     </div>-->
+	     
+	</div>
+	
+	<input type="hidden" name="end_of_list" class="end_of_list" value="0"> 
+	<input type="hidden" name="list_action" class="list_action" value="ShippingLocationList"> 
+	<input type="hidden" name="delete_action" class="delete_action" value="ShippingLocationDelete"> 
+	<input type="hidden" name="get_action" class="get_action" value="ShippingLocationGetByID">
+    
+	<form id="frm_search_shipping_loc" class="frm_search_shipping_loc" method="POST" onsubmit="return false;" > 
+	<div class="field_label field_with_icon">
+	   <ons-input type="text" name="s" id="s" modifier="material underbar"	   
+	    placeholder="Search" required float></ons-input>
+	    <ons-button modifier="quiet" onclick="submitForm('.frm_search_shipping_loc','ShippingLocationList')" >
+	    <ons-icon icon="md-search"></ons-icon>
+	    </ons-button>
+	</div>
+	</form>
+	
+	<ons-list modifier="list_column"> 
+	</ons-list>
+	
+	<div class="no_list"></div>
+	
+	<div  class="paginate_loader">
+      <ons-progress-circular indeterminate></ons-progress-circular> 
+    </div>
+    
+    <div class="spacer"></div>
+    
+    <ons-fab position="bottom right" modifier="material mini" onclick="showPage('shipping_location_form.html');">
+     <ons-icon icon="md-plus"></ons-icon>
+    </ons-fab>
+
+</ons-page>
+</template>    
+
+<template id="shipping_location_form.html">
+  <ons-page id="shipping_location_form" modifier="kform_page" >  
+
+  <ons-back-button></ons-back-button>
+  
+    <div class="top_sections">	
+         <div class="to_center">
+         <h3 class="trn">Delivery</h3>
+	     <div class="sub_title trn">Delivery Charges Rates</div>
+	     </div>
+	</div>
+		
+	<form id="frm_shipping_location" class="frm_shipping_location" method="POST" onsubmit="return false" > 	  	   	   
+	</form>
+	
+	<div class="spacer"></div>
+
+	<ons-bottom-toolbar modifier="form_bottom_small is_center">		   
+	   <ons-button modifier="material large black_btn" onclick="submitForm('.frm_shipping_location','AddShippingLocation')" >
+	   <span class="trn">SAVE</span>
+	   </ons-button>	   
+	</ons-bottom-toolbar>
+
+</ons-page>
+</template>    
+
+<template id="signup.html">
+<ons-page id="signup" modifier="yellow_page kform_page" >  
+
+<ons-toolbar>
+  <div class="left"><ons-back-button></ons-back-button></div> 
+  <div class="center trn"></div>
+</ons-toolbar>
+
+	
+    <form id="frm_signup" class="frm_signup" method="POST" onsubmit="return false" > 	  	   	   
+	</form>
+	
+	<div class="spacer"></div>
+
+	<ons-bottom-toolbar modifier="form_bottom_small is_center">		   
+	   <ons-button modifier="material large black_btn" onclick="submitForm('.frm_signup','Signup')" >
+	   <span class="trn">SIGNUP</span>
+	   </ons-button>	   
+	</ons-bottom-toolbar>
+	  	
+	
+  
+</ons-page>
+</template>    
+
+
+<template id="package_list.html">
+<ons-page id="package_list" modifier="yellow_page kform_page" >  
+<ons-toolbar>
+  <div class="left"><ons-back-button></ons-back-button></div> 
+  <div class="center trn"></div>
+</ons-toolbar>
+
+<div class="field_label">
+<div class="content_inner">
+<h3 class="trn">Please select one of our package</h3>
+</div>
+<form id="frm_package" class="frm_package" method="POST" onsubmit="return false" > 	  	   	   
+<input type="hidden" name="activation_token" id="activation_token" class="activation_token">
+<ons-list modifier="material">
+</ons-list>
+</form>
+</div>
+<div class="spacer"></div>
+
+   <ons-button modifier="material large black_btn" onclick="submitForm('.frm_package','SetPackage')" >
+   <span class="trn">CONTINUE</span>
+   </ons-button>	 
+   
+     <div class="to_center">
+	   <ons-button modifier="quiet material material--flat" onclick="resetToPage('page_login.html','fade')">
+	   <span class="trn">Go to login</span>
+	   </ons-button>
+	 </div>       
+
+</ons-page>
+</template>    
+
+
+<template id="signup_payment_list.html">
+<ons-page id="signup_payment_list" modifier="yellow_page kform_page" >  
+<ons-toolbar>
+  <div class="left"><ons-back-button></ons-back-button></div> 
+  <div class="center trn"></div>
+</ons-toolbar>
+
+<div class="field_label">
+<div class="content_inner">
+<h3 class="trn">Select payment</h3>
+</div>
+<form id="frm_signup_payment" class="frm_signup_payment" method="POST" onsubmit="return false" > 	  	   	   
+<input type="hidden" name="activation_token" id="activation_token" class="activation_token">
+<ons-list modifier="material">
+</ons-list>
+</form>
+</div>
+
+<ons-button modifier="material large black_btn" onclick="initPayment('.frm_signup_payment')" >
+<span class="trn">CONTINUE</span>
+</ons-button>	 
+
+<div class="to_center">
+<ons-button modifier="quiet material material--flat" onclick="resetToPage('page_login.html','fade')">
+<span class="trn">Go to login</span>
+</ons-button>
+</div>       
+	 
+</ons-page>
+</template>    
+
+
+<template id="signup_verification.html">
+<ons-page id="signup_verification" modifier="yellow_page kform_page" >  
+
+<div class="field_label">
+<div class="content_inner">
+<h3 class="trn">OPT Verification</h3>
+<p class="trn">please enter the verification code we sent to your email</p>
+<form id="frm_signup_verification" class="frm_signup_verification" method="POST" onsubmit="return false" > 	  	   	   
+</form>
+</div>
+
+<div class="spacer"></div>
+
+<ons-bottom-toolbar modifier="form_bottom is_center">		   
+<ons-button modifier="material large black_btn" onclick="submitForm('.frm_signup_verification','VerifySignupCode')" >
+<span class="trn">SUBMIT</span>
+</ons-button>	   
+
+<div class="to_center">
+<ons-button modifier="quiet material material--flat" onclick="resetToPage('page_login.html','fade')">
+<span class="trn">Go to login</span>
+</ons-button>
+</div>       
+
+</ons-bottom-toolbar>
+	
+</ons-page>
+</template>    
+
+
+<template id="signup_thankyou.html">
+<ons-page id="signup_thankyou" modifier="yellow_page kform_page" >  
+
+<div class="main_logo_wrap">
+  <img src="images/logo-k@2x.png" class="logo">
+  <h2>Multiple Restaurant</h2>
+  <img src="images/merchantapp@2x.png" class="sub_logo">
+ </div>          
+
+<div class="spacer"></div>
+
+<div class="field_label">
+<div class="content_inner">
+<h3 class="trn message_1">Thank you!</h3>
+<p class="trn message_2">Congratulation your merchant is now ready.</p>
+
+<div class="spacer"></div>
+
+<div class="to_center">
+<ons-button modifier="quiet material material--flat" onclick="resetToPage('page_login.html','fade')">
+<span class="trn">login to your account</span>
+</ons-button>
+</div>       
+
+</div>
+
+</ons-page>
+</template>    
 
 
 </body>

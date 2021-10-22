@@ -2,121 +2,453 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="791d2bff-7131-4eff-9e76-b4623a5827eb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/www/js/template.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/www/js/config.js" afterPath="$PROJECT_DIR$/www/js/config.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README_FIRST.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README_FIRST.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/old-google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-android.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-ios.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-ios.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/android/drawable-hdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/android/drawable-hdpi-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/android/drawable-ldpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/android/drawable-ldpi-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/android/drawable-mdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/android/drawable-mdpi-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/android/drawable-xhdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/android/drawable-xhdpi-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/android/drawable-xxhdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/android/drawable-xxhdpi-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/android/drawable-xxxhdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/android/drawable-xxxhdpi-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-1024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-20.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-40.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-50@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-50@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-60.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-72.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-72@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-72@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-76.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-76@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-83.5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-small.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-small@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-small@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon-small@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon-small@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icons/ios/icon@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/icons/ios/icon@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-land-hdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-land-hdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-land-ldpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-land-ldpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-land-mdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-land-mdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-land-xhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-land-xhdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-land-xxhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-land-xxhdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-land-xxxhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-land-xxxhdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-port-hdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-port-hdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-port-ldpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-port-ldpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-port-mdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-port-mdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-port-xhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-port-xhdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-port-xxhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-port-xxhdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/android/drawable-port-xxxhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/android/drawable-port-xxxhdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default-568h@2x~iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default-568h@2x~iphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default-667h.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default-667h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default-736h.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default-736h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default-Landscape-736h.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default-Landscape-736h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default-Landscape@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default-Landscape@2x~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default-Landscape~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default-Landscape~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default-Portrait@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default-Portrait@2x~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default-Portrait~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default-Portrait~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@2x~ipad~anyany.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@2x~ipad~anyany.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@2x~ipad~comany.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@2x~ipad~comany.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@2x~iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@2x~iphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@2x~iphone~anyany.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@2x~iphone~anyany.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@2x~iphone~comany.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@2x~iphone~comany.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@2x~iphone~comcom.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@2x~iphone~comcom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@2x~universal~anyany.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@2x~universal~anyany.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@3x~iphone~anyany.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@3x~iphone~anyany.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@3x~iphone~anycom.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@3x~iphone~anycom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default@3x~iphone~comany.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default@3x~iphone~comany.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screens/ios/Default~iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/screens/ios/Default~iphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/components/loader.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/components/loader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/components/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/components/loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/components/monaca-cordova-loader/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/components/monaca-cordova-loader/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/components/monaca-cordova-loader/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/components/monaca-cordova-loader/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/components/monaca-cordova-loader/cordova-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/components/monaca-cordova-loader/cordova-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/components/monaca-core-utils/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/components/monaca-core-utils/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/components/monaca-core-utils/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/components/monaca-core-utils/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/components/monaca-core-utils/monaca-core-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/components/monaca-core-utils/monaca-core-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/app_ios.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/app_ios.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-Black.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-ExtraBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/mavenpro/MavenPro-SemiBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-BoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-ExtraBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-ExtraBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-Italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-Light.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-LightItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-SemiBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/fonts/opensans/OpenSans-SemiBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/animated-bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/animated-bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/animated-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/animated-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/chat@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/chat@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/chef.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/chef.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/empty_flag.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/empty_flag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home-icon/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home-icon/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/home@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/home@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/icons8-empty-box-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/icons8-empty-box-64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/kuala.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/kuala.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/list@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/list@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/location-pin.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/location-pin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/logo-colorful@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/logo-colorful@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/logo-k@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/logo-k@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/merchant-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/merchant-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/merchantapp@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/merchantapp@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/orders@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/orders@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/p.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/profile@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/profile@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/street-map.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/street-map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/table@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/table@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/images/todays-order@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/images/todays-order@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/bluetooth.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/bluetooth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/escpos.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/escpos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/map-wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/map-wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/gmaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/gmaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/imagesloaded.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/imagesloaded.pkgd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/ionicons.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/ionicons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/jquery-3.5.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/jquery-3.5.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/jquery-v3.4.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/jquery-v3.4.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/jquery.geocomplete.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/jquery.geocomplete.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/jquery.translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/jquery.translate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/images/layers-2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/images/layers-2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/images/layers.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/images/layers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/images/marker-icon-2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/images/marker-icon-2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/images/marker-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/images/marker-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/images/marker-shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/images/marker-shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/leaflet-src.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/leaflet-src.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/leaflet-src.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/leaflet-src.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/leaflet-src.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/leaflet-src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/leaflet-src.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/leaflet-src.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/leaflet.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/leaflet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/leaflet.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/leaflet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/leaflet.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/leaflet.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/plugin/geocoder/mapbox-gl-geocoder.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/plugin/geocoder/mapbox-gl-geocoder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/plugin/geocoder/mapbox-gl-geocoder.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/plugin/geocoder/mapbox-gl-geocoder.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet-routing-machine.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet-routing-machine.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet-routing-machine.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet-routing-machine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet-routing-machine.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet-routing-machine.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet.routing.icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet.routing.icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet.routing.icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/leaflet.routing.icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/routing-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/leaflet/plugin/routing/routing-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/moment-timezone-with-data.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/moment-timezone-with-data.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/moment.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/misc/screenshot-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/misc/screenshot-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/misc/screenshot-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/misc/screenshot-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/patterns.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/patterns.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/app-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/app-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/category-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/category-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/component-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/component-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/components-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/components-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/notfound-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/notfound-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/pattern-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/pattern-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/patterns-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/patterns-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/platform-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/platform-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/preview-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/preview-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/theme-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/components/theme-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/index.html.eco" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/index.html.eco" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/select-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/select-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/previewer-src/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/action-sheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/action-sheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/alert-dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/alert-dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/button-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/button-bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/checkbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/checkbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/combination.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/combination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/fab.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/fab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/notification.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/notification.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/popover.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/popover.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/progress-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/progress-bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/progress-circular.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/progress-circular.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/radio-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/radio-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/range.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/range.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/search-input.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/search-input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/segment.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/segment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/switch.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/switch.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/tabbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/tabbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/text-input.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/text-input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/textarea.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/textarea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/toast.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/toast.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/toolbar-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/toolbar-button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/components/util.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/dark-onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/dark-onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/dark-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/dark-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/img/android-search-input-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/img/android-search-input-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/img/ios-search-input-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/img/ios-search-input-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/img/select-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/img/select-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/action-sheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/action-sheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/combination.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/combination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/fab.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/fab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/tabbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/tabbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/toast.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/toast.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/iphonex-support/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/license.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/license.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/old-onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/old-onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/old-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/old-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/src/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/stylelint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/stylelint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css-components-src/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css-components-src/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/dark-onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/dark-onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/dark-onsen-css-components.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/dark-onsen-css-components.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/brands.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/brands.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/brands.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/brands.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/fontawesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/fontawesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/regular.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/regular.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/regular.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/regular.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/solid.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/solid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/solid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/solid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/svg-with-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/svg-with-js.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/svg-with-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/svg-with-js.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/v4-shims.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/v4-shims.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/v4-shims.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/css/v4-shims.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/font_awesome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/css/ionicons-core.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/css/ionicons-core.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/css/ionicons-core.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/css/ionicons-core.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/css/ionicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/css/ionicons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/css/ionicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/css/ionicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/ionicons/fonts/ionicons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/css/material-design-iconic-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/old-onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/old-onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/old-onsen-css-components.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/old-onsen-css-components.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/onsen-css-components.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/onsen-css-components.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/onsenui-core.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/onsenui-core.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/onsenui-core.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/onsenui-core.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/onsenui-fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/onsenui-fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/onsenui.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/onsenui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/css/onsenui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/css/onsenui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/dark-onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/dark-onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/dark-onsen-css-components.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/dark-onsen-css-components.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-element.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/base/base-input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-action-sheet-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-action-sheet-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-action-sheet/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-action-sheet/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-action-sheet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-action-sheet/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-alert-dialog-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-alert-dialog-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-alert-dialog/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-alert-dialog/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-alert-dialog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-alert-dialog/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-back-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-back-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-bottom-toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-bottom-toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-carousel-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-carousel-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-col.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-col.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-dialog/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-dialog/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-dialog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-dialog/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-fab.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-fab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-gesture-detector.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-gesture-detector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-icon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-if.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-if.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-lazy-repeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-lazy-repeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list-header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list-item/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list-item/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list-item/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list-item/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list-title.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list-title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-modal/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-modal/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-modal/fade-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-modal/fade-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-modal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-modal/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-modal/lift-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-modal/lift-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/ios-fade-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/ios-fade-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/ios-lift-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/ios-lift-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/ios-slide-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/ios-slide-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/ios-swipe-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/ios-swipe-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/md-fade-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/md-fade-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/md-lift-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/md-lift-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/md-slide-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/md-slide-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/none-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-navigator/none-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-popover/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-popover/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-popover/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-popover/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-progress-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-progress-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-progress-circular.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-progress-circular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-pull-hook.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-pull-hook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-radio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-range.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-range.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-ripple/animator-css.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-ripple/animator-css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-ripple/animator-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-ripple/animator-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-ripple/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-ripple/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-row.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-row.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-search-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-search-input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-segment.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-segment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-speed-dial-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-speed-dial-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-speed-dial.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-speed-dial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter-mask.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter-mask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter-side.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter-side.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/overlay-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/overlay-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/push-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/push-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/reveal-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-splitter/reveal-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-switch.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-switch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-tab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-tabbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-tabbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/ascend-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/ascend-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/fade-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/fade-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/fall-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/fall-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/lift-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toast/lift-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toolbar-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toolbar-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/elements/ons-toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/action-sheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/action-sheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/animation-options-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/animation-options-parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/animit.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/animit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/autostyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/autostyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/base-animator.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/base-animator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/content-ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/content-ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/doorlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/doorlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/gesture-detector.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/gesture-detector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/animator-factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/animator-factory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/device-back-button-dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/device-back-button-dispatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/lazy-repeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/lazy-repeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/modifier-util.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/modifier-util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/swipe-reveal.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/swipe-reveal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/toast-queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/internal/toast-queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/iphonex-patch.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/iphonex-patch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/microevent.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/microevent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/modifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/modifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/notification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/orientation.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/orientation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/page-attribute-expression.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/page-attribute-expression.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/page-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/page-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/platform.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/platform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/software-keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/software-keyboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/styler.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/styler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/ons/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/ons/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/polyfills/MutationObserver@0.7.22/MutationObserver.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/polyfills/MutationObserver@0.7.22/MutationObserver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/polyfills/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/polyfills/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/polyfills/polyfill-switches.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/polyfills/polyfill-switches.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/polyfills/setImmediate@1.0.2+mod/setImmediate.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/polyfills/setImmediate@1.0.2+mod/setImmediate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/vendor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/vendor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/esm/vendor/viewport.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/esm/vendor/viewport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/js/angular-onsenui.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/js/angular-onsenui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/js/angular-onsenui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/js/angular-onsenui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/js/onsenui.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/js/onsenui.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/js/onsenui.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/js/onsenui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/js/onsenui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/js/onsenui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/old-onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/old-onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/old-onsen-css-components.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/old-onsen-css-components.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/onsen-css-components.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/onsen-css-components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/onsen-css-components.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/onsen-css-components.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/onsen/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/onsen/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/progress-circle.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/progress-circle.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/fonts/raty.eot" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/fonts/raty.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/fonts/raty.svg" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/fonts/raty.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/fonts/raty.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/fonts/raty.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/fonts/raty.woff" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/fonts/raty.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/images/cancel-off.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/images/cancel-off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/images/cancel-on.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/images/cancel-on.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/images/star-half.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/images/star-half.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/images/star-off.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/images/star-off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/images/star-on.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/images/star-on.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/jquery.raty.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/jquery.raty.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/raty/jquery.raty.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/raty/jquery.raty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/skeleton.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/skeleton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/snazzy-info-window/snazzy-info-window.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/snazzy-info-window/snazzy-info-window.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lib/snazzy-info-window/snazzy-info-window.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/lib/snazzy-info-window/snazzy-info-window.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/sounds/critical.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/www/sounds/critical.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/sounds/neworder.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/www/sounds/neworder.mp3" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62550">
-              <caret line="4170" column="19" lean-forward="false" selection-start-line="4170" selection-start-column="19" selection-end-line="4170" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/template.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1042">
-              <caret line="2759" column="30" lean-forward="false" selection-start-line="2759" selection-start-column="30" selection-end-line="2759" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#ons-tab#0;n#ons-tabbar#0;n#ons-page#0;n#template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#1;n#ons-tabbar#0;n#ons-page#0;n#template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#2;n#ons-tabbar#0;n#ons-page#0;n#template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#3;n#ons-tabbar#0;n#ons-page#0;n#template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#4;n#ons-tabbar#0;n#ons-page#0;n#template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#button#0;n#ons-tab#4;n#ons-tabbar#0;n#ons-page#0;n#template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#0;n#ons-tabbar#0;n#ons-page#0;n#template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#1;n#ons-tabbar#0;n#ons-page#0;n#template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#2;n#ons-tabbar#0;n#ons-page#0;n#template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#0;n#ons-tabbar#0;n#ons-page#0;n#template#17;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#1;n#ons-tabbar#0;n#ons-page#0;n#template#17;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#2;n#ons-tabbar#0;n#ons-page#0;n#template#17;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#0;n#ons-tabbar#0;n#ons-page#0;n#template#25;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#ons-tab#1;n#ons-tabbar#0;n#ons-page#0;n#template#25;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#ons-page#0;n#template#48;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#ons-page#0;n#template#51;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#ons-page#0;n#template#52;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#ons-page#0;n#template#56;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#ons-page#0;n#template#58;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/manifest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="google-services.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/google-services.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -152,6 +484,7 @@
     <option name="width" value="1260" />
     <option name="height" value="733" />
   </component>
+  <component name="ProjectId" id="1zqP1ujrziSQUrwnCuuUkRyfr9b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -202,20 +535,14 @@
       <pane id="Scratches" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211021_0000" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -299,10 +626,16 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AppMerchant/www/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -313,6 +646,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612829776838</updated>
+      <workItem from="1634872434543" duration="2164000" />
     </task>
     <task id="LOCAL-00001" summary="- update to app 1.1.0">
       <created>1621136658613</created>
@@ -355,17 +689,13 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- update to app 1.1.0" />
     <MESSAGE value="- removing the merchant app logo." />
     <option name="LAST_COMMIT_MESSAGE" value="- removing the merchant app logo." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/www/css/style.css">

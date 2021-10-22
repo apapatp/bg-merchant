@@ -1225,7 +1225,7 @@ BT_template_addon = function($paper_width, $name , $qty, $price, $sub_item_total
 	$row_qty2 = "  " +  $qty + " x " +  $price;
 	
 	$len = $row_qty.length; 
-	dump("$len=>"+ $len);
+	//dump("$len=>"+ $len);
 	if($len>$max_len){
 	   $tpl.push( {"type":"text","value": "  "+ $name } );
 	   $tpl.push( {"type":"command","value":CTL_LF} );	
@@ -1322,6 +1322,10 @@ BT_setChar = function(char_set){
 		case "CHARCODE_THAI18":
 		   $tpl.push( {"type":"command","value":CHARCODE_THAI18} );
 		break;
+		
+		case "CHARCODE_CHINESE":		  
+		  $tpl.push( {"type":"command","value":CHARCODE_CHINESE} );
+		break;
 				
 	}
 };
@@ -1356,7 +1360,7 @@ BT_templateOrder2 = function( $data, $paper_width , $custom_data ){
 	
 	/*HEADER*/
 				
-	if ((typeof  BT_char_set!== "undefined") && ( BT_char_set !== null)) {							
+	if ((typeof  BT_char_set!== "undefined") && ( BT_char_set !== null)) {				
 		$char_set = BT_setChar( BT_char_set );		
 	}
 	
@@ -1480,8 +1484,16 @@ BT_templateOrder2 = function( $data, $paper_width , $custom_data ){
 	/*ORDER DETAILS*/
 		
 	$template += $_line+" "+ '\n';
+	$counter = 0; $total_item = 0;
 	
 	$.each( $data.order_details  , function( $key, $val ) {
+		
+		$template += ESC_COMMANDS.TEXT_FORMAT.TXT_BOLD_ON ;	
+		$template += $val.category_name + '\n';
+		$template += ESC_COMMANDS.TEXT_FORMAT.TXT_BOLD_OFF ;
+		
+		$total_item = $data.order_details.length;		
+		
 		$.each( $val.item  , function( $key_item, $item ) {
 			
 			$template += BT_template_item2( $paper_width , $item.name , $item.item_total_price, $item.qty , $item.price, $item.discount, $item.price_after_discount  );	
@@ -1517,16 +1529,30 @@ BT_templateOrder2 = function( $data, $paper_width , $custom_data ){
 					});
 				} 
 			});/* SUB ITEM*/
-			
+												
+			$counter++;			
+			if($template.length>500){
+				$tpl.push( {"type":"text","value": $template } );
+				dump($template);
+				$template = '';
+			} else {
+				if ($counter>=$total_item){
+					$tpl.push( {"type":"text","value": $template } );
+					dump($template);
+					$template = '';
+				}
+			}
+									
 		});/* ITEM*/
 	}); /*ORDER DETAILS*/
 	
 		
+	$template = '';
 	$template += $_line + " \n" + ESC_COMMANDS.TEXT_FORMAT.TXT_BOLD_ON ;	
 
-	$tpl.push( {"type":"text","value": $template } );	
+	/*$tpl.push( {"type":"text","value": $template } );	
 	dump($template);
-	$template = '';
+	$template = '';*/
 	
 	/*FOOTER*/
 	$total_details = $data.total_details;
@@ -1594,6 +1620,7 @@ BT_templateOrder2 = function( $data, $paper_width , $custom_data ){
 	$template += ESC_COMMANDS.LF;
 	$template += ESC_COMMANDS.LF;	
 		
+	dump("FOOTER=>"+ $template.length);
 	dump($template);
 	
 	
@@ -1632,7 +1659,7 @@ BT_template_item2 = function($paper_width, $item_name, $total_price , $qty , $pr
 	$len = $item_name.length;  
 	$discount = parseFloat($discount);
 	
-	dump("$max_len=>"+$max_len + " $len=>"+ $len);
+	//dump("$max_len=>"+$max_len + " $len=>"+ $len);
 	
 	var $_template = '';
 	
@@ -1669,11 +1696,11 @@ BT_template_addon2 = function($paper_width, $name , $qty, $price, $sub_item_tota
 	
 	var $_template = '';
 	
-	$row_qty = "  " + $qty + " " + $name  + " " +  "("+$price+")";
+	$row_qty = "  " + $qty + " x " + $name  + " " +  "("+$price+")";
 	$row_qty2 = "  " +  $qty + " x " +  $price;
 	
 	$len = $row_qty.length; 
-	dump("$len=>"+ $len);
+	//dump("$len=>"+ $len);
 	if($len>$max_len){
 	   
 	   $_template +=  "  "+ $name + '\n';

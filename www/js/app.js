@@ -32,6 +32,7 @@ var $handle_incoming;
 var $handle_outgoing;
 var $handle_ready;
 var $handle_refresh_order;
+var $handle_refresh_outgoing;
 var $handle_refresh_ready;
 
 var $handle_todays_booking;
@@ -157,6 +158,9 @@ ons.ready(function() {
 				 	 exit_cout=0;
 				 }, 3000);
 			  } else {
+			  	
+			  	 removeStorage("country_list");			  	 
+			  				  
 			  	 if (navigator.app) {
 				   navigator.app.exitApp();
 				 } else if (navigator.device) {
@@ -299,7 +303,20 @@ document.addEventListener('init', function(event) {
     	    {'field_name':"username", "label":t("User name") },
     	    {'field_name':"password", "label":t("Password") },
     	  ];
-    	  translateForm(page_id,$_fields);    	      	     	 
+    	  translateForm(page_id,$_fields);    	   
+    	  
+    	  if ((typeof  $settings.options.merchant_disabled_registration !== "undefined") && ( $settings.options.merchant_disabled_registration !== null)) {
+    	      if($settings.options.merchant_disabled_registration=="yes"){
+    	      	 $(".only_forgot_pass_div").show();
+    	      	 $(".both_forgot_and_signup_div").hide();
+    	      } else {
+    	      	 $(".only_forgot_pass_div").hide();
+    	      	 $(".both_forgot_and_signup_div").show();
+    	      }
+    	  } else {
+    	  	 $(".only_forgot_pass_div").show();
+    	     $(".both_forgot_and_signup_div").hide();
+    	  }
     	break;
     	
     	case "forgot_password":
@@ -381,22 +398,43 @@ document.addEventListener('init', function(event) {
     	  $("#"+ current_page_id + " .list").val( page.data.list );
     	  $("#"+ current_page_id + " .field").val( page.data.field );
     	  $("#"+ current_page_id + " .page_title").html( t(page.data.page_title) );
-    	  $("#"+ current_page_id + " .list_type").val( list_type );
+    	  $("#"+ current_page_id + " .list_type").val( list_type );    	  
+    	  
+    	  if ((typeof  page.data.field2 !== "undefined") && ( page.data.field2 !== null)) {
+    	      $("#"+ current_page_id + " .field2").val( page.data.field2 );
+    	  }
+    	  
+    	  $field_reference='';
+    	  if ((typeof  page.data.field_reference !== "undefined") && ( page.data.field_reference !== null)) {
+    	      $("#"+ current_page_id + " .field_reference").val( page.data.field_reference );       	      
+    	      $field_reference = $("."+ page.data.field_reference ).val();    	      
+    	  }
+    	  
+    	  if ((typeof  page.data.clear_field !== "undefined") && ( page.data.clear_field !== null)) {
+    	  	 $clear_field = page.data.clear_field;    	  	 
+    	  	 $clear_field = $clear_field.split(",");       	  	 
+    	  	 $.each( $clear_field , function( $clear_fieldkey, $clear_fieldval ) {    	  	 	
+    	  	 	$("."+ $clear_fieldval ).val('');    	      
+    	  	 });
+    	  }
     	  
     	  multiple = !empty(page.data.multiple)?page.data.multiple:'';
-    	  processAjax(list_action,'field='+ page.data.field + "&multiple="+multiple ,'POST',4); 
-    	  infinitePage(page,list_action);
-    	  initPullHook(list_action); 	  
+    	  
+    	  $params = 'field='+ page.data.field + "&multiple="+multiple + "&field_reference="+$field_reference ;
+    	  
+    	  processAjax(list_action, $params,'POST',4); 
+    	  infinitePage(page,list_action,$params);    	  
+    	  initPullHook(list_action, '', $params ); 	  
     	break;
     	
     	case "merchant_settings":
     	  
     	  fields = [
     	  
-    	      {'field_name':"merchant_photo", "label": "Merchant Logo", "type":"upload_image", 
+    	      {'field_name':"merchant_photo", "label": "Merchant Logo", "type":"upload_image", "type_s3":"merchant/" ,
 				"upload_option_name" : 'merchant_photo', "upload_next_action":"display_image", "upload_type":1, "thumbnail": '', "value": ''  },
 				
-			{'field_name':"merchant_photo_bg", "label": "Merchant Header", "type":"upload_image2", 
+			{'field_name':"merchant_photo_bg", "label": "Merchant Header", "type":"upload_image2", "type_s3":"merchant/" ,
 				"upload_option_name" : 'merchant_photo_bg', "upload_next_action":"display_image", "upload_type":1, "thumbnail": '', "value": ''  },	
 
 			  {'field_name':"", "label": "Order Options", "type":"h3"},
@@ -502,6 +540,7 @@ document.addEventListener('init', function(event) {
     	case "broadcast_list":
     	case "order_time_management_list":
     	case "invoice_list":
+    	case "shipping_list_location":
     	
     	  $_fields = [
     	    {'field_name':"s", "label":t("Search") },    	    
@@ -512,18 +551,36 @@ document.addEventListener('init', function(event) {
     	  list_action = $("#"+ current_page_id + " .list_action").val();    	  
     	  processAjax(list_action,'','POST',6); 
     	  infinitePage(page,list_action);
-    	  initPullHook(list_action); 	  
+    	  initPullHook(list_action);
+
+		  merchant_info = getMerchantInfo();
+		  slug = merchant_info.restaurant_slug;
+
+		  $("#banner_settings .type_s3").val('merchant/'+slug+'/');
+
     	  
     	  if(page_id=="orders_status_list"){    	  	 
     	  	 if($settings.options.merchant_status_disabled==2){
     	  	    $("#"+ page_id + " ons-fab.add").attr("disabled",true);
     	  	 }
     	  }
+    	      	  
+    	  if(page_id=="shipping_list_location"){  
+    	  	setTimeout(function(){	
+		      processAjax("CountryList",'','POST', '' ,'silent');
+		    }, 200);          	     
+    	  }
     	  
     	break;
     	
     	case "category_form":
-    	    	  
+
+			slug ='';
+
+			merchant_info = getMerchantInfo();
+			slug = merchant_info.restaurant_slug;
+
+
     	  category_name=''; description=''; status=''; id=''; thumbnail =''; $value='';
     	  $category_name_trans = []; $category_description_trans = [];
     	  if(!empty(page.data.cat_id)){
@@ -541,7 +598,7 @@ document.addEventListener('init', function(event) {
     	    {'field_name':"category_name", "label": "Food Category Name", "type":"text", "value" : category_name ,"required":1 },
     	    {'field_name':"category_description", "label": "Description", "type":"textarea", "value" : description },
     	    
-    	    {'field_name':"photo", "label": "Upload image", "type":"upload_image", 
+    	    {'field_name':"photo", "label": "Upload image", "type":"upload_image", "type_s3" :'merchant/'+slug+'/' ,
     	    "upload_option_name" : 'photo', "upload_next_action":"display_image", "upload_type":1, "thumbnail": thumbnail, "value": $value  },
     	    
     	    
@@ -609,7 +666,11 @@ document.addEventListener('init', function(event) {
     	
     	  
     	  name =''; description=''; status='';  price=0; selected_count=''; id=''; thumbnail =''; $value='';
-    	  $sub_item_name_trans = [];  $item_description_trans = [];
+    	  $sub_item_name_trans = [];  $item_description_trans = [];slug ='';
+
+		  merchant_info = getMerchantInfo();
+		  slug = merchant_info.restaurant_slug;
+
     	  
     	  if(!empty(page.data.sub_item_id)){    	  	 
     	  	 id = page.data.sub_item_id;
@@ -632,7 +693,7 @@ document.addEventListener('init', function(event) {
     	     {'field_name':"addoncat_list", "label": "AddOn Category", "type":"text", "readonly":1,"required":1,
 			  "onclick":"showPage('selection_list.html','',{'list_action':'AddonCategoryList','list':'addoncat_list','field':'category','page_title':'Select AddOn Category'} )","required":1,"value":selected_count },
     	     
-			  {'field_name':"photo", "label": "Upload image", "type":"upload_image", 
+			  {'field_name':"photo", "label": "Upload image", "type":"upload_image", "type_s3":"merchant/"+slug+'/',
 "upload_option_name" : 'photo', "upload_next_action":"display_image", "upload_type":1, "thumbnail": thumbnail, "value": $value  },
 			  
     	    
@@ -673,7 +734,13 @@ document.addEventListener('init', function(event) {
     	    	  
     	   $item_added_addon = [];
     	   $size_data = getSizeList();
-    	   
+
+		   slug ='';
+
+			merchant_info = getMerchantInfo();
+			slug = merchant_info.restaurant_slug;
+
+
     	   value=''; item_id=''; selected_count='';
     	   item_name = ''; item_description = ''; status=''; not_available='';
     	   category_selected=''; discount ='';  two_flavors='';
@@ -681,6 +748,8 @@ document.addEventListener('init', function(event) {
     	   packaging_incremental=''; cooking_ref=''; dish=''; ingredients='';
     	   thumbnail =''; $value='';
     	   $item_name_trans = []; $item_description_trans = [];
+    	   
+    	   $transport_type_selected = '';
     	   
     	   if(!empty(page.data.item_id)){
     	   	   item_id = page.data.item_id;
@@ -705,13 +774,16 @@ document.addEventListener('init', function(event) {
     	  	   
     	  	   $item_name_trans = page.data.item_name_trans;
     	  	   $item_description_trans = page.data.item_description_trans;
+    	  	   
+    	  	   $transport_type_selected = page.data.delivery_options.length>0? page.data.delivery_options.length + " " + t("selected") :'';
     	   }
+    	       	   
     	       	   
     	   fields = [
     	      {'field_name':"item_name", "label": "Item name", "type":"text", "value" : item_name ,"required":1 },
     	      {'field_name':"item_description", "label": "Description", "type":"textarea", "value" : item_description ,},
     	          	          	      
-			  {'field_name':"photo", "label": "Upload image", "type":"upload_image", 
+			  {'field_name':"photo", "label": "Upload image", "type":"upload_image","type_s3":'merchant/'+slug+'/item/',
 				"upload_option_name" : 'photo', "upload_next_action":"display_image", "upload_type":1, "thumbnail": thumbnail, "value": $value  },
 
 
@@ -753,7 +825,11 @@ document.addEventListener('init', function(event) {
 			  
 			  {'field_name':"", "label": "Two Flavors", "type":"h3"},			  			
 			  {'field_name':"two_flavors", "label": "Enabled", "type":"checkbox","value": 2 , "checked" : two_flavors , "onclick" : "showHideTwoFlavor();"},
-
+			  
+			  {'field_name':"", "label": "Delivery options", "type":"h3"},	
+			  {'field_name':"", "label": "Select vehicle type for this item can be used for delivery", "type":"h4"},				  
+			  {'field_name':"deliveryoptions", "label": "Select Transportation", "type":"text", "readonly":1, 
+			  "onclick":"showPage('selection_list.html','',{'list_action':'TransportType','list':'deliveryoptions','field':'delivery_options','page_title':'Select Transportation'} )","required":1,"value": $transport_type_selected },
 			  
 			  {'field_name':"", "label": "Addon item", "type":"h3"},	
 			  
@@ -799,6 +875,14 @@ document.addEventListener('init', function(event) {
 	    	  	 	 fields.push(new_fields);
 	    	  	 });
     	  	 }    	  	
+    	  	 
+    	  	 if(page.data.delivery_options.length>0){
+	    	  	 $.each( page.data.delivery_options  , function( key, val ) {
+	    	  	 	 new_fields = {'field_name':"delivery_options[]", "label": "delivery_options",
+	    	  	 	 "type":"hidden2", "value" : val , "class_name":"delivery_options selected_added" };	 
+	    	  	 	 fields.push(new_fields);
+	    	  	 });
+    	  	 }
     	  	 
     	   }
     	   
@@ -1222,10 +1306,14 @@ document.addEventListener('init', function(event) {
 	    	  $interval_cancel = parseInt($interval_cancel)*60000;
 	    	  $interval_ready_order = parseInt($interval_ready_order)*60000;
 	    	  
+	    	  
 	    	  $handle_refresh_order = setInterval(function(){runCron('refresh_order','todays_order')}, $interval_new );    	  
 	    	  $handle_refresh_cancel_order = setInterval(function(){runCron('refresh_cancel_order','cancel_orders')}, $interval_cancel );
 	    	  	    	      	    	 
 	    	  $handle_refresh_ready = setInterval(function(){runCron('refresh_ready_order','ready_order')}, $interval_ready_order );
+	    	  
+	    	  $handle_refresh_outgoing = setInterval(function(){runCron('refresh_outgoing','refresh_outgoing')}, $interval_new+200 );    	  
+	    	  
     	  }
     	  
     	break;
@@ -1892,6 +1980,171 @@ document.addEventListener('init', function(event) {
     	  setFormFields(fields);    
     	break;
     	
+    	case "shipping_location_form":    	
+    	
+    	   $rate_id='';
+    	   $country_id = getStorage("location_default_country");  $state_id=''; $city_id=''; $area_id='';
+    	   $country_list = getCountryList(); $fee=''; $minimum_order=''; $free_above_subtotal='';
+    	   $state_name=''; $city_name=''; $area_name=''; 
+    	   
+    	   if(!empty(page.data.id)){    	   	  
+    	   	  $rate_id = page.data.id;
+    	   	  $country_id  = page.data.country_id;
+    	   	  $state_id  = page.data.state_id;
+    	   	  $state_name  = page.data.state_name;
+    	   	  
+    	   	  $city_id  = page.data.city_id;
+    	   	  $city_name  = page.data.city_name;
+    	   	  
+    	   	  $area_id  = page.data.area_id;
+    	   	  $area_name  = page.data.area_name;
+    	   	  
+    	   	  $fee  = page.data.fee;
+    	   	  $minimum_order  = page.data.minimum_order;
+    	   	  $free_above_subtotal  = page.data.free_above_subtotal;
+    	   }    	   
+    	       	      	   			 
+    	   fields = [    	        
+
+    	       {'field_name':"country_id", "label": "Country", "type":"select", "data": $country_list , "selected" :$country_id},
+			  
+			  {'field_name':"state_id", "label": "state_id", "type":"hidden", "value" : $state_id,  "required":1  },     
+			  	   
+    	      {'field_name':"state_name", "label": "State/Region", "type":"text", "readonly":1, 
+			  "onclick":"showPage('selection_list.html','',{'list_action':'LocationStateList','list':'state_name','field':'state_name','page_title':'Select State/Region','list_type':'single','field2':'state_id', 'field_reference':'country_id', 'clear_field':'city_id,city_name,area_id,area_name,fee' } )",
+			  "required":1,"value":$state_name },		  
+
+			  
+			  {'field_name':"city_id", "label": "city_id", "type":"hidden", "value" : $city_id,  "required":1  },     
+			  	   
+    	      {'field_name':"city_name", "label": "City", "type":"text", "readonly":1, 
+			  "onclick":"showPage('selection_list.html','',{'list_action':'LocationCityList','list':'city_name','field':'city_name','page_title':'Select City','list_type':'single','field2':'city_id', 'field_reference':'state_id','clear_field':'area_id,area_name,fee' } )",
+			  "required":1,"value":$city_name },		  
+			  
+			  {'field_name':"area_id", "label": "area_id", "type":"hidden", "value" : $area_id,  "required":1  },     
+			  	   
+    	      {'field_name':"area_name", "label": "Distric/Area/neighborhood", "type":"text", "readonly":1, 
+			  "onclick":"showPage('selection_list.html','',{'list_action':'LocationAreaList','list':'area_name','field':'area_name','page_title':'Select Area','list_type':'single','field2':'area_id', 'field_reference':'city_id' } )",
+			  "required":1,"value":$area_name },		  
+			  
+			  {'field_name':"fee", "label": "Fee", "type":"number" , "value": $fee ,  "required":1 },
+			  {'field_name':"minimum_order", "label": "Minimum Order", "type":"number" , "value": $minimum_order },
+			  {'field_name':"free_above_subtotal", "label": "Free delivery above sub total", "type":"number" , "value": $free_above_subtotal },
+
+			  {'field_name':"id", "label": "id", "type":"hidden", "value" : $rate_id  },  	       
+			  
+    	   ];    
+    	   setFormFields(fields);  
+    	break;
+    	
+    	case "signup":
+    	
+    	  $activation_token = getStorage("activation_token");    	  
+    	  if(!empty($activation_token)){
+    	  	  ons.notification.confirm( t("Would you like to resume?"),{
+					title: t("We detected previous signup") ,		
+					id : "dialog_order_options",
+					modifier: " ",			
+					buttonLabels : [ t("Yes") , t("No") ]
+				}).then(function(input) {				
+					if (input==0){
+						processAjax("signup_merchantinfo",'activation_token='+ $activation_token);
+					} else {
+						removeStorage("activation_token");
+					}				
+			   }); 
+    	  }
+    	
+    	  $country_list = getCountryList();
+    	  $country_id = getStorage("location_default_country");
+    	  fields = [    	   
+    	    {'field_name':"restaurant_name", "label": "Restaurant name", "type":"text","required":1},
+    	    {'field_name':"restaurant_phone", "label": "Restaurant phone", "type":"text","required":1},
+    	    {'field_name':"contact_phone", "label": "Contact name", "type":"text","required":1},
+    	    {'field_name':"contact_email", "label": "Contact email", "type":"text","required":1},
+    	    
+    	    {'field_name':"", "label": "Important: Please enter your correct email. we will sent an activation code to your email", "type":"h4"},
+    	    
+    	    {'field_name':"street", "label": "Street address", "type":"text","required":1},
+    	    {'field_name':"city", "label": "City", "type":"text","required":1},
+    	    {'field_name':"state", "label": "State/Region", "type":"text","required":1},
+    	    {'field_name':"post_code", "label": "Post code/Zip code", "type":"text","required":1},
+    	    {'field_name':"country_id", "label": "Country", "type":"select", "data": $country_list , "selected" :$country_id},
+    	    
+    	    {'field_name':"cuisine_list", "label": "Cuisine", "type":"text", "readonly":1, 
+			  "onclick":"showPage('selection_list.html','',{'list_action':'getCuisineList','list':'cuisine_list','field':'cuisine','page_title':'Select cuisine'} )","required":1 },
+			  
+			{'field_name':"service", "label": "Services", "type":"select", "data": $settings.services},
+			
+			{'field_name':"delivery_distance_covered", "label": "Delivery Distance Covered", "type":"number"},
+			  
+			{'field_name':"distance_unit", "label": "Unit", "type":"select", "data":  $settings.distance_unit },
+			  
+			{'field_name':"", "label": "Login Information", "type":"h3"},
+			
+			{'field_name':"username", "label": "Username", "type":"text","required":1},
+			{'field_name':"password", "label": "Password", "type":"password","required":1},
+			{'field_name':"confirm_password", "label": "Confirm Password", "type":"password","required":1},
+			
+			{'field_name':"", "label": "Select Membership Type", "type":"h3"},
+			{'field_name':"merchant_type", "label": "Businness", "type":"select", "data":  $settings.merchant_type_list },
+			
+			{'field_name':"invoice_terms", "label": "invoice_terms", "type":"select", "data":  $settings.invoice_terms_list },
+    	    
+    	  ];   
+    	  setFormFields(fields);  
+    	  
+    	  setTimeout(function(){	
+			 $(".invoice_terms").parent().hide();
+			 
+			 $( document ).on( "change", ".merchant_type", function() {
+			 	 if($(this).val()==3){
+			 	 	$(".invoice_terms").parent().show();
+			 	 } else {
+			 	 	$(".invoice_terms").parent().hide();
+			 	 }
+			 });
+			 
+		  }, 500);
+    	  
+    	break;
+    	
+    	case "package_list":
+    	  current_page_id = getCurrentPage();
+    	  $activation_token = getStorage("activation_token");    
+    	  if(!empty($activation_token)){
+    	  	 $("#"+current_page_id  +" .activation_token").val( $activation_token );
+    	  }
+    	  processAjax("packageList",'','POST');
+    	break;
+    	
+    	case "signup_payment_list":
+    	  current_page_id = getCurrentPage();    	      	  
+    	  $("#"+current_page_id  +" .activation_token").val( page.data.activation_token );
+    	  processAjax("PaymentList",'','POST');
+    	break;
+    	
+    	case "signup_verification":
+    	  current_page_id = getCurrentPage();    	      	  
+    	  $activation_token = page.data.activation_token;
+    	  fields = [
+    	     {'field_name':"activation_key", "label": "enter code", "type":"number" , "required":1},
+    	     {'field_name':"activation_token", "label": "activation_token", "type":"hidden", "value" : $activation_token  },  	       
+    	  ];
+    	  setFormFields(fields);  
+    	break;
+    	
+    	case "signup_thankyou":
+    	    	  
+		   if ((typeof  page.data.message_1 !== "undefined") && ( page.data.message_1 !== null)) {
+		   	   $(".message_1").html( page.data.message_1 );
+		   }
+		   if ((typeof  page.data.message_2 !== "undefined") && ( page.data.message_2 !== null)) {
+		   	   $(".message_2").html( page.data.message_2 );
+		   }
+    			   
+    	break;
+    	
     	default:
     	  //
     	break;
@@ -2053,6 +2306,7 @@ document.addEventListener('postpop', function(event) {
 		case "printer_list":
 		case "order_time_management_list":
 		case "invoice_list":
+		case "shipping_list_location":
 		 current_page_id = getCurrentPage();  
 		 list_action = $("#"+ current_page_id + " .list_action" ).val();
 		 
@@ -3168,6 +3422,68 @@ processAjax = function(action, data , method, single_call, loader_type ){
     			  browseLink(data.details.link);
     			break;
     			
+    			case "open_in_browser":    			      			  
+    			  OpenInBrowser(data.details.link);
+    			break;
+    			
+    			case "store_country":
+    			  setStorage("country_list", JSON.stringify(data.details.data) );
+    			  setStorage("location_default_country", data.details.location_default_country );
+    			      			  
+    			  if ((typeof  data.details.form_next !== "undefined") && ( data.details.form_next !== null)) {
+    			  	  showPage(data.details.form_next);
+    			  }
+    			break;
+    			
+    			case "select_package":
+    			  setStorage('activation_token',data.details.activation_token);
+    			  resetToPage("package_list.html");
+    			break;
+    			
+    			case "set_package_list":
+    			  setPackageList(data.details.data);    			 
+    			break;
+    			
+    			case "signup_payment_list":
+    			 showPage(data.details.form_next,'',{
+    			  	'activation_token':data.details.activation_token
+    			  });
+    			break;
+    			
+    			case "set_payment_list":
+    			 setSelectionList(data.details.data); 
+    			break;
+    			
+    			case "signup_verification":    			   
+    			   resetToPage('signup_verification.html','',{
+    			  	'activation_token':data.details.activation_token
+    			  });
+    			break;
+    			
+    			case "signup_thankyou":
+    			   removeStorage("activation_token");
+    			   
+    			   $message_1='';$message_2='';
+    			   if ((typeof  data.details.message_1 !== "undefined") && ( data.details.message_1 !== null)) {
+    			   	   $message_1 = data.details.message_1;
+    			   }
+    			   if ((typeof  data.details.message_2 !== "undefined") && ( data.details.message_2 !== null)) {
+    			   	   $message_2 = data.details.message_2;
+    			   }
+    			   
+    			   resetToPage('signup_thankyou.html','',{
+    			  	'activation_token':data.details.activation_token,
+    			  	'message_1':$message_1,
+    			  	'message_2':$message_2
+    			  });
+    			break;
+    			
+    			case "refresh_outgoing_tab":    			    
+		           list_action = "order_list";
+		           params = 'new=1&page_id=outgoing_order&refresh=1&order_type=outgoing';		           
+		           processAjax(list_action,params,'POST','', 'paginate_loader');     	 
+    			break;
+    			
     			default:
     			  showToast( data.msg ,'success');
     			break;
@@ -3212,6 +3528,10 @@ processAjax = function(action, data , method, single_call, loader_type ){
     			  
     			  showToast( data.msg ,'danger');
     			     
+    			break;
+    			
+    			case "clear_activation_token":
+    			  removeStorage("activation_token");
     			break;
     			 
     			default:
@@ -3541,15 +3861,19 @@ setSelection = function(){
 	current_page = document.querySelector('ons-navigator').topPage.id;   
 	list = $("#"+ current_page + " .list").val();
 	field = $("#"+ current_page + " .field").val();
+	field2 = $("#"+ current_page + " .field2").val();
 	list_type = $("#"+ current_page + " .list_type").val();
 	
 	onsenNavigator.popPage();	
 	
 	setTimeout(function(){    		
          		
-		if(list_type=="single"){
+		if(list_type=="single"){			
 			$.each( params  , function( key, val ) {	        	
 	        	$("#"+current_page +  " ."+field).val( val.value );
+	        	if(!empty(field2)){
+	        	   $("#"+current_page +  " ."+field2).val( val.name );
+	        	}
 	        });
 		} else {
 	        $("#"+ current_page + " ."+ list).val( params.length + " " + t("selected") );
@@ -4422,6 +4746,18 @@ runCron = function($type, $page_id){
 		  processAjax("refresh_ready_order","order_id="+$order_ids,'POST',$_timenow,'silent')
 		break;
 		
+		case "refresh_outgoing":		 		  
+		  $order_ids=[];		  
+		  var $object = $("#" + "outgoing_order" + " ons-list ons-list-item" );
+		  if($object.length>0){
+		  	 $.each( $object  , function( $objectkey, $objectval ) {		  	 	
+		  	 	$order_ids.push( $(this).data("order_id") );
+		  	 });
+		  }
+		  $_timenow = getTimeNow();
+		  processAjax("refresh_outgoing","order_id="+$order_ids,'POST',$_timenow,'silent')
+		break;
+		
 	}
 };
 
@@ -4442,6 +4778,7 @@ stopAllCron = function(){
 	
 	clearInterval($handle_push_list);		   
 	clearInterval($handle_refresh_ready);
+	clearInterval($handle_refresh_outgoing);
 };
 
 dateDifference = function(date_now, date_past){
@@ -5088,7 +5425,9 @@ uploadPhoto = function(imageURI){
 		 
 		 $upload_type = $("#"+ current_page_id + " .upload_type").val();
 		 params.upload_type = $upload_type;
-		 		 		 		 		 
+		 $type_s3 = $("#"+ current_page_id + " .type_s3").val();
+		 params.type_s3 = $type_s3;
+
 		 options.params = params;	 
 		 options.chunkedMode = false;	
 		 
@@ -5228,8 +5567,12 @@ uploadBanner = function(imageURI){
 		 params.next_action = upload_next_action;
 		 
 		 $upload_type = $("#"+ current_page_id + " .upload_type2").val();
+
 		 params.upload_type = $upload_type;
-		 		 		 		 		 
+		 $type_s3 = $("#"+ current_page_id + " .type_s3").val();
+
+		 params.type_s3 = $type_s3;
+
 		 options.params = params;	 
 		 options.chunkedMode = false;	
 		 
@@ -5891,4 +6234,124 @@ addListenerItemAvailable = function($object){
 	$available = $object.checked==true?1:2;
 	$item_id = $object.value;
 	processAjax("updateItemAvailable", "available="+$available+"&item_id="+$item_id ,'POST');
+};
+
+OpenInBrowser = function(url){	
+	if(!empty(url)){
+		if( isdebug() ){	
+		    window.open(url);		   
+		} else {
+			cordova.InAppBrowser.open(url, '_system');			
+		}
+	}
+};
+
+
+var getCountryList = function(){
+	 $data = getStorage("country_list");	 
+	 if(!empty($data)){
+	    $data = JSON.parse( $data );	 
+	    return $data;
+	 }
+	 return false;
+};
+
+loadSignupForm = function(){
+	if( getCountryList()){
+		showPage('signup.html');
+	} else {
+		processAjax('CountryList','form_next=signup.html');
+	}
+};
+
+initPayment = function(form_name){
+	$params = $( form_name ).serializeArray();  	
+	$activation_token = ''; $payment_code='';
+	$.each($params , function( $key, $val ) {
+		if($val.name=="payment_code"){
+		   $payment_code = $val.value;
+		} else if ($val.name=="activation_token"){
+			$activation_token = $val.value;
+		}
+	});	
+	$settings = getMerchantSettings(); 
+	payWebview( $settings.web_modules_api+"/"+$payment_code+"?activation_token="+$activation_token );
+};
+
+payWebview = function(url){
+	if( !isdebug() ){	
+		 inapp = cordova.InAppBrowser.open( url  , '_blank', 'location=no,toolbar=no,closebuttoncaption=a,EnableViewPortScale=no,hidden=yes' ); 		 
+		 
+		 inapp.addEventListener('loadstart', function() {
+		 	showLoader(true);
+		 });
+		 
+		 inapp.addEventListener('loadstop', function(event){		 	
+		 	 inapp.show();
+		 	 showLoader(false);
+		 	 
+		 	 url = event.url;
+		 	 var res = url.match(/success/gi);
+		 	 if(!empty(res)){
+		 	   inapp.executeScript({
+			      code: "document.documentElement.innerText"
+			   }, function(html) {			   	  
+			   	  inapp.close();
+			   	  
+			   	  try {
+			         $html_resp = JSON.parse( html );
+			         
+			         $next_action = $html_resp.next_action;
+			         $activation_token = $html_resp.activation_token;
+			         
+			         if($next_action=="signup_verification"){
+			         	resetToPage('signup_verification.html','',{
+		    			  	'activation_token': $activation_token
+		    			});
+			         } else if ( $next_action=="signup_thankyou"){
+			         	removeStorage("activation_token"); 
+			         	
+			         	$message_1='';$message_2='';
+	    			    if ((typeof  $html_resp.message_1 !== "undefined") && ( $html_resp.message_1 !== null)) {
+	    			   	   $message_1 = $html_resp.message_1;
+	    			    }
+	    			    if ((typeof  $html_resp.message_2 !== "undefined") && ( $html_resp.message_2 !== null)) {
+	    			   	   $message_2 = $html_resp.message_2;
+	    			    }
+			         	
+			         	resetToPage('signup_thankyou.html','',{
+	    			  	 'activation_token':data.details.activation_token,
+	    			  	 'message_1':$message_1,
+	    			  	 'message_2':$message_2
+	    			   }); 
+			         } else {
+			         	showToast( t("undefined next action"),'danger');
+			         }
+			      } catch(err) {
+				     dump2(err.message);
+				  } 
+			      
+			   	  
+			   });
+		 	 }
+		 	 
+		 	 var error = url.match(/error/gi);
+		 	 if(!empty(error)){
+		 	   inapp.executeScript({
+			      code: "document.documentElement.innerText"
+			   }, function(html) {
+			   	  inapp.close();
+			      showAlert(html);
+			   });
+		 	 }
+		 	 
+		 	 var cancel = url.match(/cancel/gi);
+		 	 if(!empty(cancel)){
+		 	 	inapp.close();
+		 	 }
+		 	 
+		 });
+	} else {
+	    window.open(url);
+	}	
 };

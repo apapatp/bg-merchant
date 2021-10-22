@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "982313397445",
+    "project_id": "bargaingrub-main",
+    "storage_bucket": "bargaingrub-main.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982313397445:android:aaca71e20473c947ccd4ac",
+        "android_client_info": {
+          "package_name": "com.bargaingrub.merchantapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982313397445-f4k9714gdlv8k2ne8sgi7octae5d6lcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe3xRLAcX0MEvD61-DtWQ8TAeVwkVuM9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982313397445-f4k9714gdlv8k2ne8sgi7octae5d6lcu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
