@@ -232,12 +232,12 @@ font-weight: 400;
 }
 
 .page--splash_screen__background{
-background:url("../images/animated-bg.gif") no-repeat center center #ffdb79;
+background:url("../images/p.png") no-repeat center center #000;
 background-size:contain;
 }
 
 .page--login_screen__background{
-background:url("../images/background.jpg") no-repeat center center #ffdb79;
+background:url("../images/p.png") no-repeat center center #000;
 background-size:contain;
 }
 
